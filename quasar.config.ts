@@ -6,6 +6,7 @@ export default defineConfig(() => ({
   extras: ['material-icons'],
   build: {
     target: {
+      publicPath: '/Hanuri/',
       browser: ['es2022', 'firefox115', 'chrome115', 'safari14'],
       node: 'node20'
     },
