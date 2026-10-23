@@ -1,0 +1,27 @@
+{
+  "name": "hanuri",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "quasar prepare",
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.4",
+    "pinia": "^2.3.0",
+    "quasar": "^2.17.7",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^2.0.0",
+    "@types/node": "^22.10.2",
+    "@vue/devtools": "^8.2.1",
+    "typescript": "^5.7.2",
+    "vite-plugin-vue-devtools": "^8.2.1",
+    "vue-tsc": "^2.2.0"
+  }
+}
