@@ -1,4 +1,4 @@
-# Hanuri
+# HANURI
 
 A Vue 3 application scaffolded with Quasar Framework, Vite, TypeScript, Vue Router, and Pinia.
 
