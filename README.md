@@ -4,7 +4,7 @@ A Vue 3 application scaffolded with Quasar Framework, Vite, TypeScript, Vue Rout
 
 ## Requirements
 
-- Node.js 20 or later
+- Node.js 22.22 or later
 - npm
 
 ## Setup
