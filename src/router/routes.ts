@@ -16,7 +16,7 @@ const routes: RouteRecordRaw[] = [
     children: [{
       path: '',
       component: () => import('pages/Catalog/Catalog.vue'),
-      meta: { title: 'Каталог' }
+      meta: { title: 'Продукция' }
     }]
   },
   {
