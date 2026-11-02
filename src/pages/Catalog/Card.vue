@@ -2,12 +2,12 @@
   <q-page class="page-content">
     <template v-if="product">
       <q-btn
-        label="Назад в каталог"
+        :label="returnLabel"
         color="primary"
         flat
         icon="arrow_back"
         class="back-button"
-        @click="$router.push('/catalog')"
+        @click="returnToSource"
       />
 
       <section class="product-card">
@@ -47,9 +47,20 @@ import list from './list.json'
 export default {
   name: 'ProductCardPage',
   computed: {
+    returnPath() {
+      return this.$route.query.from === '/' ? '/' : '/catalog'
+    },
+    returnLabel() {
+      return this.returnPath === '/' ? 'На главную' : 'Назад в каталог'
+    },
     product() {
       const id = Number(this.$route.params.id)
       return Number.isInteger(id) ? list.find((item) => item.Id === id) : undefined
+    }
+  },
+  methods: {
+    returnToSource() {
+      this.$router.push(this.returnPath)
     }
   }
 }

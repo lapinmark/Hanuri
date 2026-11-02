@@ -97,7 +97,10 @@ export default {
       this.$router.push('/catalog');
     },
     openProduct(id) {
-      this.$router.push(`/catalog/${id}`)
+      this.$router.push({
+        path: `/catalog/${id}`,
+        query: { from: this.$route.path }
+      })
     },
     scrollCarousel(event) {
       const carousel = this.$refs.productCarousel

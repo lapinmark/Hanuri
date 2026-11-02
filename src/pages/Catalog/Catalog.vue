@@ -49,7 +49,10 @@ export default {
   },
   methods: {
     openProduct(id) {
-      this.$router.push(`/catalog/${id}`)
+      this.$router.push({
+        path: `/catalog/${id}`,
+        query: { from: this.$route.path }
+      })
     }
   }
 }
