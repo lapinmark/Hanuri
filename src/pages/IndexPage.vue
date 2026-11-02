@@ -27,7 +27,7 @@
         ref="productCarousel"
         class="product-carousel"
         role="region"
-        aria-label="Карусель товаров"
+        aria-label="Продукция"
         tabindex="0"
         @wheel="scrollCarousel"
       >

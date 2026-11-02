@@ -25,6 +25,9 @@
         <q-item class="nav-item" clickable v-ripple to="/catalog" @click="drawerOpen = false">
           <q-item-section>Продукция</q-item-section>
         </q-item>
+        <q-item class="nav-item" clickable v-ripple to="/contacts" @click="drawerOpen = false">
+          <q-item-section>Контакты</q-item-section>
+        </q-item>
       </q-list>
     </q-drawer>
 

@@ -20,6 +20,15 @@ const routes: RouteRecordRaw[] = [
     }]
   },
   {
+    path: '/contacts',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{
+      path: '',
+      component: () => import('pages/ContactsPage.vue'),
+      meta: { title: 'Контакты' }
+    }]
+  },
+  {
     path: '/catalog/:id',
     component: () => import('layouts/MainLayout.vue'),
     children: [{
